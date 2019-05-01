@@ -1,21 +1,15 @@
 package com.bettr.bettrbet.model;
 
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Event {
 
     private EventType eventType;
-    private LocalDateTime startDateTime;
-    private LocalDateTime endDateTime;
-    private String result;
-    private Set<Bet> bets;
+    private String homeTeam;
+    private String awayTeam;
+    private Set<Market> markets = new HashSet<>();
 
-
-    public Event() {
-        bets = new HashSet<>();
-    }
 
     public EventType getEventType() {
         return eventType;
@@ -25,35 +19,27 @@ public class Event {
         this.eventType = eventType;
     }
 
-    public LocalDateTime getStartDateTime() {
-        return startDateTime;
+    public String getHomeTeam() {
+        return homeTeam;
     }
 
-    public void setStartDateTime(LocalDateTime startDateTime) {
-        this.startDateTime = startDateTime;
+    public void setHomeTeam(String homeTeam) {
+        this.homeTeam = homeTeam;
     }
 
-    public LocalDateTime getEndDateTime() {
-        return endDateTime;
+    public String getAwayTeam() {
+        return awayTeam;
     }
 
-    public void setEndDateTime(LocalDateTime endDateTime) {
-        this.endDateTime = endDateTime;
+    public void setAwayTeam(String awayTeam) {
+        this.awayTeam = awayTeam;
     }
 
-    public String getResult() {
-        return result;
+    public Set<Market> getMarkets() {
+        return markets;
     }
 
-    public void setResult(String result) {
-        this.result = result;
-    }
-
-    public Set<Bet> getBets() {
-        return bets;
-    }
-
-    public void setBets(Set<Bet> bets) {
-        this.bets = bets;
+    public void setMarkets(Set<Market> markets) {
+        this.markets = markets;
     }
 }

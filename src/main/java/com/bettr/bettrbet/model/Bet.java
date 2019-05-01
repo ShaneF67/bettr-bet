@@ -7,7 +7,6 @@ public class Bet {
     private Punter punter;
     private Selection selection;
     private LocalDateTime timeOfBet;
-    private BetType betType;
     private boolean result;
 
     public Punter getPunter() {
@@ -32,14 +31,6 @@ public class Bet {
 
     public void setTimeOfBet(LocalDateTime timeOfBet) {
         this.timeOfBet = timeOfBet;
-    }
-
-    public BetType getBetType() {
-        return betType;
-    }
-
-    public void setBetType(BetType betType) {
-        this.betType = betType;
     }
 
     public boolean isResult() {

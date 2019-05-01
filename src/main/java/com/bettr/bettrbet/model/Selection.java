@@ -1,23 +1,26 @@
 package com.bettr.bettrbet.model;
 
+/**
+ * Represents a possible outcome for a market
+ */
 public class Selection {
 
-    private Event event;
-    private Price price;
+    private String marketOutcome;
+    private Price odds;
 
-    public Event getEvent() {
-        return event;
+    public String getMarketOutcome() {
+        return marketOutcome;
     }
 
-    public void setEvent(Event event) {
-        this.event = event;
+    public void setMarketOutcome(String market) {
+        this.marketOutcome = market;
     }
 
     public Price getPrice() {
-        return price;
+        return odds;
     }
 
-    public void setPrice(Price price) {
-        this.price = price;
+    public void setPrice(Price odds) {
+        this.odds = odds;
     }
 }

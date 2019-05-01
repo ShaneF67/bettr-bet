@@ -2,14 +2,14 @@ package com.bettr.bettrbet.model;
 
 public class Price {
 
-    private Float odds;
+    private Double odds;
     private Bookmaker bookmaker;
 
-    public Float getOdds() {
+    public Double getOdds() {
         return odds;
     }
 
-    public void setOdds(Float odds) {
+    public void setOdds(Double odds) {
         this.odds = odds;
     }
 

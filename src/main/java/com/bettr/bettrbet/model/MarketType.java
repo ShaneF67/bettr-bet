@@ -1,5 +1,5 @@
 package com.bettr.bettrbet.model;
 
-public enum BetType {
+public enum MarketType {
     WDW, CORRECT_SCORE
 }
